@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Residence4UmDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ResidentialComplex">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="NameAlt" Type="nvarchar" MaxLength="250" />
+    <Property Name="Abbr" Type="nvarchar" MaxLength="50" />
+    <Property Name="ResComCatId" Type="int" Nullable="false" />
+    <Property Name="ParentId" Type="int" Nullable="false" />
+    <Property Name="DistrictId" Type="int" />
+    <Property Name="StateId" Type="int" />
+    <Property Name="CountryId" Type="int" Nullable="false" />
+    <Property Name="Founded" Type="datetime" />
+    <Property Name="FoundedYr" Type="int" />
+    <Property Name="YearOrSem" Type="nvarchar" MaxLength="50" />
+    <Property Name="Descr" Type="nvarchar" MaxLength="500" />
+    <Property Name="Logo" Type="nvarchar(max)" />
+    <Property Name="CoverImg" Type="nvarchar(max)" />
+    <Property Name="Video1" Type="nvarchar(max)" />
+    <Property Name="Priority" Type="int" Nullable="false" />
+    <Property Name="IsDel" Type="bit" Nullable="false" />
+    <Property Name="IsApproved" Type="bit" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CrDt" Type="datetime" />
+    <Property Name="CrDtSys" Type="datetime" />
+    <Property Name="CrBY" Type="nvarchar" MaxLength="50" />
+    <Property Name="CrByIP" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsMod" Type="bit" Nullable="false" />
+    <Property Name="ModCount" Type="int" />
+    <Property Name="ModDt" Type="datetime" />
+    <Property Name="ModDtSys" Type="datetime" />
+    <Property Name="ModBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModByIP" Type="nvarchar" MaxLength="50" />
+    <Property Name="Roles" Type="nvarchar" MaxLength="250" />
+    <Property Name="ModDescr" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="Residence4UmDBModelStoreContainer">
+    <EntitySet Name="ResidentialComplex" EntityType="Self.ResidentialComplex" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

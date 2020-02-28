@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Residence4UmDBModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="ResidentialComplexes">
+      <EntityTypeMapping TypeName="Residence4UmDBModel.ResidentialComplex">
+        <MappingFragment StoreEntitySet="ResidentialComplex">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="NameAlt" ColumnName="NameAlt" />
+          <ScalarProperty Name="Abbr" ColumnName="Abbr" />
+          <ScalarProperty Name="ResComCatId" ColumnName="ResComCatId" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="DistrictId" ColumnName="DistrictId" />
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="Founded" ColumnName="Founded" />
+          <ScalarProperty Name="FoundedYr" ColumnName="FoundedYr" />
+          <ScalarProperty Name="YearOrSem" ColumnName="YearOrSem" />
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="CoverImg" ColumnName="CoverImg" />
+          <ScalarProperty Name="Video1" ColumnName="Video1" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="IsDel" ColumnName="IsDel" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CrDt" ColumnName="CrDt" />
+          <ScalarProperty Name="CrDtSys" ColumnName="CrDtSys" />
+          <ScalarProperty Name="CrBY" ColumnName="CrBY" />
+          <ScalarProperty Name="CrByIP" ColumnName="CrByIP" />
+          <ScalarProperty Name="IsMod" ColumnName="IsMod" />
+          <ScalarProperty Name="ModCount" ColumnName="ModCount" />
+          <ScalarProperty Name="ModDt" ColumnName="ModDt" />
+          <ScalarProperty Name="ModDtSys" ColumnName="ModDtSys" />
+          <ScalarProperty Name="ModBy" ColumnName="ModBy" />
+          <ScalarProperty Name="ModByIP" ColumnName="ModByIP" />
+          <ScalarProperty Name="Roles" ColumnName="Roles" />
+          <ScalarProperty Name="ModDescr" ColumnName="ModDescr" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

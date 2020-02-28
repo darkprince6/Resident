@@ -1,0 +1,214 @@
+﻿@model IEnumerable<Resident.Models.ResidentialComplex>
+
+@{
+    ViewBag.Title = "SampleDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>SampleDetails</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ResComCat.Cat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NameAlt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Abbr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ParentId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DistrictId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StateId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CountryId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Founded)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FoundedYr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.YearOrSem)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Logo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CoverImg)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Video1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Priority)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsDel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsApproved)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CrDt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CrDtSys)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CrBY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CrByIP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsMod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModCount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModDt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModDtSys)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModBy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModByIP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Roles)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModDescr)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ResComCat.Cat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NameAlt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Abbr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ParentId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DistrictId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StateId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CountryId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Founded)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FoundedYr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.YearOrSem)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Logo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CoverImg)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Video1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Priority)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsDel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsApproved)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsActive)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CrDt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CrDtSys)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CrBY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CrByIP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsMod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModCount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModDt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModDtSys)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModBy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModByIP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Roles)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModDescr)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

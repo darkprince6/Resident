@@ -1,0 +1,22 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master/Main.master" AutoEventWireup="true" CodeBehind="Public.master.cs" Inherits="Resident.Master.Public" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="mCP" runat="server">
+    <div class="container-fluid" style="margin-top: 80px">
+
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <h3>Top Fixed Navbar</h3>
+                <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
+                <h1>Scroll this page to see the effect</h1>
+                <asp:ContentPlaceHolder ID="cp1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+
+</asp:Content>
+

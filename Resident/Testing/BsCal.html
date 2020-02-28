@@ -1,0 +1,49 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Jquery Bootstrap Year Calendar - Basic Example</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link href="jquery.bootstrap.year.calendar.css" rel="stylesheet" />
+    <script src="jquery.bootstrap.year.calendar.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="calendar" data-provide="calendar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.calendar').calendar({
+            showHeaders: true,
+            startYear: "2019",
+            clickDay: function (e) {
+                if (e.events.length === 0) {
+                    addEvent({ date: e.date });
+                    alert("Hello");
+                }   
+            }
+            
+        });
+    </script>
+</body>
+</html>
