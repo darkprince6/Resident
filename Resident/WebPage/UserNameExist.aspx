@@ -163,8 +163,9 @@
                                     <div class="divUserCheckAlert p-1 mb-1 border-0 alert" style="font-size: 10px">
                                     </div>
                                     <a href="../Image/alert.svg">Avik Mondal is a good boy</a>
-                                    <%--<a href="../Image/alert.svg">Avik Mondal is a good boy</a>--%>
-
+                                    <div>
+                                        Hi this is new
+                                    </div>
                                     <div class="form-group m-2px">
                                         <asp:Button ID="btnSubmit" runat="server" CssClass="btn btn-outline-dark btn-sm" Text="Submit" OnClick="btnSubmit_Click" />
                                     </div>
